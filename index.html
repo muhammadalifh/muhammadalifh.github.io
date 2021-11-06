@@ -262,13 +262,21 @@
             <!-- End Contact -->
             <!-- Footer Copyright -->
             <div class="copyright">
-                <p>Copyright &copy; 2021 Made with
+                <p>Copyright &copy; <span class="yearJS"></span> All Rights Reserved | Made with
                     <span class="love">💖</span>&nbsp;Love by me 🧑🏻
                 </p>
                     
             </div>
         </div>
     </div>
+
+<!-- YEAR -->
+<script>
+    window.addEventListener('DOMContentLoaded',(event) => {
+        document.querySelector('.yearJS').innerHTML = new Date().getFullYear(); 
+    })
+</script>
+    
 <script>
     let toggle = document.querySelector('.toggle');
     let topbar = document.querySelector('.topbar');
