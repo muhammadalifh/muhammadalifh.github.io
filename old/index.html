@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon/icons8-tobio-kageyama-48.png">
+    <title>My Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Jquery Pace -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="src/pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="/src/bez-master/lib/jquery.bez.js"></script>
+    <script src="/src/bez-master/lib/jquery.bez.min.js"></script>
+    <script src="src/bez-master/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a href="#banner" onclick="toggleMenu();">Home 🏡</a></li>
+                <li><a href="#about" onclick="toggleMenu();">About 🧑</a></li>
+                <li><a href="#skills" onclick="toggleMenu();">Skills 🤹‍♂️</a></li>
+                <li><a href="#project" onclick="toggleMenu();">Project 💻</a></
+                <li><a href="#contact" onclick="toggleMenu();">Contact 📞</a></li>
+            </ul>
+            <div class="themeSwitch"></div>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <a href="#" class="logo">Portfolio</a>
+                <div class="toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Banner -->
+            <section id="banner" class="banner">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="img/bw.png" alt="user">
+                    </div>
+                    <h3>Muhammad Alif Hidayatullah</h3>
+                    <p>I'm a Software Engineer.</p>
+                    <a download href="img/CV.pdf" class="btn">Download CV</a>
+                    <ul class="socialMedia">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/muhammad-alif-hidayatullah-722261170/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a target="_blank" href="https://t.me/MAlifHi"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                        <li><a target="_blank" href="https://github.com/muhammadalifh"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                        <li><a target="_blank" href="mailto:muhammad.19065@mhs.unesa.ac.id"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- End Banner -->
+            <!-- About -->
+            <section id="about" class="about reveal adjust">
+                <div class="title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="content">
+                    <div class="textBox">
+                        <p>Let me introduce myself. My name is Muhammad Alif Hidayatullah, but you can call me Alif. I was born on January 20th, 2001.
+                            I am a student majoring in Informatics Engineering at, State University of Surabaya.
+                            I like to learn new things, hard worker, like to interact with people, and work as a team.
+                            In addition, during my studies, I have also completed several projects that were created using PHP
+                            Native and are currently still in stages for migration using the Laravel framework.
+                            and lately, I like a method called OSINT (Open Source Intelligent) to pass the time.</p>
+                    </div>
+                    <div class="imgBx">
+                        <img src="img/about-1-modified.jpeg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- End About -->
+            <!-- Skills -->
+            <section id="skills" class="skills reveal adjust">
+                <div class="title">
+                    <h2>My Skills</h2>
+                </div>
+                <div class="content">
+                    <div class="serviceBox">
+                        <a href="https://progate.com/course_certificate/4cb802aeql6lnj"><img src="img/icon/icons8-python-50.png" alt=""></a>
+                        <h2>Python</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <a target="_blank" href="https://progate.com/course_certificate/76aa93d2qiaxtq"><img src="img/icon/icons8-mysql-logo-50.png" alt=""></a>
+                        <h2>MYSQL</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <a target="_blank" href="https://progate.com/course_certificate/d0e690b6qrvg13"><img src="img/icon/icons8-php-logo-50.png" alt=""></a>
+                        <h2>PHP</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="img/icon/icons8-html-5-50.png" style="margin-left: -60px;" alt=""><img src="img/icon/icons8-css3-50.png" style="margin-top:-50px; margin-right: -50px;" alt="">
+                        <h2>HTML & CSS</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="img/icon/icons8-microsoft-powerpoint-2019-50.png" style="margin-left: -110px;" alt=""><img src="img/icon/icons8-microsoft-word-2019-50.png" style="margin-top:-50px; margin-right: 10px;" alt=""><img src="img/icon/icons8-microsoft-excel-2019-50.png" style="margin-top:-50px; margin-right: -90px;" alt="">
+                        <h2>Microsoft Office</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <a target="_blank" href="https://progate.com/course_certificate/0c524103qrgvan"><img src="img/icon/icons8-javascript-50.png" alt=""></a>
+                        <h2>Javascript</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <a target="_blank" href="https://www.linkedin.com/posts/muhammad-alif-hidayatullah-722261170_contestant-global-osint-search-party-ctf-activity-6830440944203108352-biHB"><img src="img/icon/icons8-hacking-50.png" alt=""></a>
+                        <h2>OSINT</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <a target="_blank" href="https://progate.com/course_certificate/b2e18361qj4je6"><img src="img/icon/icons8-git-50.png" alt=""></a>
+                        <h2>Git</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <a target="_blank" href="https://progate.com/course_certificate/3d30b2a5qiazv3"><img src="img/icon/icons8-command-line-50.png" alt=""></a>
+                        <h2>Command Line</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <a target="_blank" href="https://laravel.com/"><img src="img/icon/icons8-laravel-50.png" alt=""></a>
+                        <h2>Laravel</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <a target="_blank" href="https://wordpress.com/id/"><img src="img/icon/icons8-wordpress-50.png" alt=""></a>
+                        <h2>Wordpress</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="serviceBox">
+                        <a target="_blank" href="https://gohugo.io/"><img src="img/icon/hugo-256.png" alt=""></a>
+                        <h2>HUGO</h2>
+                        <br>
+                        <div class="skill">
+                            <div class="skill-bar">
+                                <div class="skill-per" per="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Skills -->
+            <!-- Projects -->
+            <section id="project" class="project reveal adjust">
+                <div class="title">
+                    <h2>Recent Work</h2>
+                    <!-- <p>These are some of the projects I've made with my friends, and there are also game projects that I've worked on myself.
+                        keep in mind that there are several projects that are still in progress and are still private to maintain the security of the project.
+                        the project will be published when it's finished 😁</p> -->
+                </div>
+                <div class="content">
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img/Mokarya-0.PNG" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3><a target="_blank" href="https://github.com/AriqF/MoKarya"><img src="img/icon/icons8-github-64.png" alt=""></a></h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img/ringkasnet.PNG" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3><a target="_blank" href="https://github.com/AriqF/Ringkas-Net"><img src="img/icon/icons8-github-64.png" alt=""></a></h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img/mangov2.PNG" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3><a target="_blank" href="https://github.com/AriqF/man-go"><img src="img/icon/icons8-github-64.png" alt=""></a></h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img/omicron.png" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3><a target="_blank" href="https://github.com/muhammadalifh/Sentiment-Analysis-Omicron"><img src="img/icon/icons8-github-64.png" alt=""></a></h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img/Bot-twitter.PNG" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3><a target="_blank" href="https://github.com/muhammadalifh/TwitterBotWork"><img src="img/icon/icons8-github-64.png" alt=""></a></h3>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="img/gamedev.PNG" alt="">
+                        </div>
+                        <div class="textBx">
+                            <h3><a target="_blank" href="https://github.com/muhammadalifh/bajak-laut-dan-harta-karun-yang-hilang"><img src="img/icon/icons8-github-64.png" alt=""></a></h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About -->
+            <!-- Contact -->
+            <form action="https://formspree.io/f/mpzkgrrn" method="POST">
+                <section id="contact" class="contact reveal adjust">
+                    <div class="title">
+                        <h2>Feel free to contact me</h2>
+                    </div>
+                    <div class="contactForm">
+                        <div class="row">
+                            <input required type="text" name="first_name" placeholder="First Name">
+                            <input required type="text" name="last_name" placeholder="Last Name">
+                        </div>
+                        <div class="row">
+                            <input required type="email" name="_replyto" placeholder="Email">
+                            <input required type="text" name="phone_num" placeholder="Phone Number">
+                        </div>
+                        <div class="row2">
+                            <textarea required name="message" placeholder="Message" ></textarea>
+                        </div>
+                        <div class="row2">
+                            <input type="submit" value="Send" name="" id="">
+                        </div>
+                    </div>
+                </section>
+            </form>
+            <!-- End Contact -->
+            <!-- Footer Copyright -->
+            <div class="copyright">
+                <p>Copyright &copy; <span class="yearJS"></span> All Rights Reserved | Made with
+                    <span class="love">💖</span>&nbsp;Love by me 🧑🏻
+                </p>
+                    
+            </div>
+        </div>
+    </div>
+
+<!-- YEAR -->
+<script>
+    window.addEventListener('DOMContentLoaded',(event) => {
+        document.querySelector('.yearJS').innerHTML = new Date().getFullYear(); 
+    })
+</script>
+    
+<script>
+    let toggle = document.querySelector('.toggle');
+    let topbar = document.querySelector('.topbar');
+    let navigation = document.querySelector('.navigation');
+    let main = document.querySelector('.main');
+    let themeSwitch = document.querySelector('.themeSwitch');
+    let body = document.querySelector('body');
+    toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        topbar.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+    }
+
+    // Theme Switch
+    themeSwitch.onclick = function(){
+        body.classList.toggle('dark')
+    }
+
+    //fix menu active class issue
+    function toggleMenu(){
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        navigation.classList.remove('active');
+        main.classList.remove('active');
+    }
+
+</script>
+
+<!-- Animated Skill -->
+<script>
+    $('.skill-per').each(function(){
+    var $this = $(this);
+    var per = $this.attr('per');
+    $this.css("width",per+'%');
+    $({animatedValue: 0}).animate({animatedValue: per},{
+        duration: 1000,
+        step: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+        },
+        complete: function(){
+            $this.attr('per', Math.floor(this.animatedValue) + '%');
+        }
+    });
+    });
+</script>
+
+
+<!-- Reveal Scroll-->
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+    }
+    </script>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div class="loading">LOADING</div>
+</div>
+<script>
+
+    paceOptions = {
+    ajax: true,
+    document: true,
+    eventLag: false
+    };
+
+    Pace.on('done', function() {
+    $('.loading').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+
+    $('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
+
+    TweenMax.from(".topbar", 2, {
+        delay: 1.8,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+        })
+});
+
+</script>
+
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+
+<!-- Scrollpath -->
+<script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+    progress.style.height = progressHeight + "%"; }
+</script>
+
+
+</body>
+</html>
